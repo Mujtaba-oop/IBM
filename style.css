@@ -1,0 +1,568 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Open Sans', sans-serif;
+}
+.menu-item-2721{
+    display: none;
+}
+.header {  
+    background-image: url('/images/background.png');
+    background-size: cover;  
+    background-position: center;  
+    height: 300px; /* Adjust height as needed */  
+    display: flex;  
+    flex-direction: column;  
+    justify-content: center;  
+    align-items: flex-start;  
+    color: white;  
+    padding: 20px;  
+    background-repeat: no-repeat;
+} 
+header.site-header {
+    border-top: 6px solid #2b2626;
+    background-color: #fff;
+	margin-bottom: 0px;
+}
+
+.social_htext_wrap{
+	color: #fff;
+	font-weight: 300;
+	width:75%;
+	height : 30px;
+	background-color: #2b2626;
+	margin-left:25%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+/* *************************responsive***************************** */
+.social_htext_wrap span{
+	text-align: center;
+}
+@media (max-width: 768px) {
+    .social_htext_wrap {
+		color: #fff;
+		font-weight: 300;
+		width:100%;
+		padding: 0px 10px ;
+		height : 30px;
+		background-color: #2b2626;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		margin-left:0%;
+    }
+	.social_htext_wrap:before {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		border-bottom: 50px solid rgb(255, 255, 255);
+		border-right: 50px solid   #2b2626;
+		width: 0;
+		z-index: -1;
+	  }
+}
+.fa-facebook{
+ font-size: 20px;
+ border: #ffffff;
+}
+.social_htext_wrap {
+	height: 50px;
+	position: relative;
+  }
+.social_htext_wrap:before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	border-bottom: 50px solid rgb(255, 255, 255);
+	border-right: 50px solid   #2b2626;
+	width: 0;
+  }
+.title_phone >*{
+	display: block;
+}
+.title_phone {
+	padding: 0 7px 0 7px;
+	
+}
+.header_info_wrap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+
+.title_location_wrap >*{
+	display: block;
+}
+.title_phone,.title_location_wrap {
+	padding: 0 7px 0 7px;
+	
+}
+.header_info_wrap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+.logo_info_wrap{
+	display: flex;
+	flex-wrap: wrap;
+	align-items:normal;
+	gap: 10px;
+	width: 70%;
+	margin: 0 auto;
+	ju
+}
+.fa-brands{
+font-size: xx-large;
+}
+/* *****************Navigation Bar ******************************** */
+/* Main Navigation Styles */
+#site-navigation {
+    background-color:#2D7FC7;
+    font-family: Arial, sans-serif;
+}
+
+#primary-menu {
+    list-style: none;
+    display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+
+    padding: 0;
+    margin: 0;
+}
+
+#primary-menu > li {
+    position: relative;
+    padding: 0px 10px ;
+	margin:  10px 0px;
+}
+
+#primary-menu > li > a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 0px 12px;
+    display: block;
+	text-align: start;
+}
+
+#primary-menu > li > a:hover,
+#primary-menu > li.current-menu-item > a {
+    color: #ffeb3b;
+	
+}
+
+
+
+.menu-item-2721:hover.sub-menu {
+    display: block;
+}
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 5px;
+    background-color: #2D7FC7;
+    list-style: none;
+    margin: 0;
+    min-width: 200px;
+	z-index: 1;
+}
+
+
+
+.sub-menu li a {
+    padding: 0px 15px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+	text-align: start;
+}
+
+.sub-menu li a:hover {
+    color: #ccc4c4;
+}
+
+/* Hover to show submenu */
+#primary-menu > li:hover > .sub-menu {
+    display: block;
+}
+
+/* Dropdown Arrow */
+.sf-with-ul::after {
+    content: "";
+    font-size: 10px;
+    color: #ffffff;
+
+
+	
+}
+
+/* Center the navigation */
+.main-navigation.center {
+    text-align: center;
+}
+.menu-item {
+	border-right: 1px solid rgb(255, 255, 255);
+}
+.sub-menu li {
+    padding: 5px;
+	border-bottom: 1px solid rgb(255, 255, 255);
+	border-right: none
+	
+}
+.menu-item-3272{
+ border: none;
+}
+.fa-bars {
+padding: 5px;
+}
+.menu-bar{
+	display: none;
+	box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5);
+
+}
+@media (max-width: 768px) { 
+	.main-navigation.center {
+    text-align: start;
+	} 
+    #primary-menu {  
+        flex-direction: column; /* Stack items vertically */  
+        /* align-items: center; /* Center align items */  */
+		justify-content: space-between; 
+    }  
+    
+    #primary-menu > li {  
+        margin: 5px 0; /* Reduced margin for vertical stack */
+		border-bottom: 0.5px solid rgb(228, 228, 228);  
+		padding: 10px 0px;
+    }  
+
+    .sub-menu {  
+        position: static; /* Make sub-menu static in stacked layout */  
+        width: 100%; /* Full width for sub-menu */  
+		
+		
+    }  
+    .sub-menu li {  
+		border-bottom: none;  
+		
+		
+    }  
+	.mmenu-wrapper{
+		height: 0px;
+		overflow: hidden; /* Ensures content is hidden when height is 0 */
+		transition: height 0.3s ease; /* Smooth height transition */
+	}
+	.menu-bar{
+		display: block;
+		padding: 0 10px;
+		display: flex;
+		justify-content: end;
+	}
+	.menu-bar i{ 
+		color: #ffffff;
+		margin:2px 0px;
+		size: 0px;
+	}
+	}
+ 
+
+/* Dropdown Arrow Icon */  
+.sf-with-ul::after {  
+    content: " ▼"; /* Dropdown arrow icon */  
+    font-size: 10px;  
+    color: white; /* Arrow color */  
+    margin-left: 5px; /* Space between text and arrow */  
+}  
+
+/* Center the Navigation */  
+.main-navigation.center {  
+    text-align: center; /* Center align */  
+}  
+
+/* Additional Item Styling */  
+.menu-item {  
+	border-right: none  
+}  
+
+.menu-item:last-child {  
+    border-right: none; /* Remove right border from last item */  
+}  
+/* ***********divider********************** */
+.section-break-1 {
+	background-color: transparent;
+	border: 0;
+	border-top: 1px double #ccc;
+	height: 3px;
+	margin: 7% auto;
+	margin-bottom: 1%;;
+	width: 30%;
+	position: relative;
+  }
+
+  .section-break-1::before {
+	content: '\22A1'; /* Square corner icon */
+	font-size: 20px;
+	color: #ccc;
+	position: absolute;
+	top: -15px;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 0 10px;
+	background-color: #fff; /* Background for the icon */
+  }
+
+  /* *************card************** */
+.content{
+    height: 70px;
+}
+.card-wraper{
+    display: inline;
+    border: 1px solid rgb(47, 38, 38);
+    width:fit-content
+}
+ .slide-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 10px;
+        }
+
+
+
+        /* Image styling within each card */
+    .card-wraper {
+            width: 200px;
+            height: 80%;
+          
+        }
+        .image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .slide-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+.try {
+    color: rgb(0, 248, 248);
+    position: relative;
+    bottom : -28px;
+	z-index: 200;
+}
+
+.card-wraper:hover::before {
+    opacity: 1; /* Show overlay on hover */
+}
+.card-wraper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0; /* Initially zero width */
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3); /* White overlay */
+    transition: width 0.4s ease; /* Smooth slide effect */
+    z-index: 1;
+}
+
+.card-wraper:hover::before {
+    width: 100%; /* Expands overlay to full width on hover */
+}
+.mySwiper{
+height: 400px;;
+}
+.section-heading h1 {
+    font-size: 50px !important;
+	padding: 10px 0px;;
+    font-weight: 100;
+    color: #2D7FC7;
+    text-align: center;
+}
+
+.bg_achieve{
+	width: 70%;
+	margin: 0 auto ;
+}
+.counter_container {  
+	display: flex;  
+	flex-wrap: wrap;
+	gap: 20px;  
+
+	padding: 20px;  
+	border-radius: 10px;  
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  
+}  
+.counter_one_wrap, .counter_two_wrap, .counter_three_wrap, .counter_fout_wrap {  
+	text-align: center;  
+	border-radius: 8px;  
+	padding: 20px;  
+
+	width: 150px;  
+}  
+.image_wrap_fa {  
+	font-size: 40px;  
+	color:  #b4b4b4;  
+}  
+.counter_count {  
+	font-size: 38px;  
+	color: #2D7FC7;   
+	display: block; 
+	font-weight: 100; 
+}  
+.counter_title {  
+	font-size: 18px;  
+	color: #b4b4b4; 
+} 
+.wrap_counter{
+	justify-content: center;
+	gap: 5%;
+	display: flex;
+	flex-wrap: wrap;
+}
+/* +*************************************************** fotter********************************** */
+ /* General footer styling */  
+#colophon {  
+    background-color: #2c2c2c;  /* Dark background */  
+    color: white;  /* White text color */  
+    padding: 20px;  /* Padding for spacing */  
+}  
+
+/* Container styling for the footer */  
+
+
+/* Clearfix for the footer columns */  
+.footer_area {  
+    display: flex;  
+    flex-wrap: wrap;  /* Allow responsive wrapping */  
+    justify-content: space-between;  /* Evenly space columns */  
+}  
+
+/* Individual footer area styling */  
+.footer_area_one,  
+.footer_area_two,  
+.footer_area_three {  
+    flex: 1;  /* Flex grow */  
+    margin: 10px;  /* Margin for spacing */  
+    min-width: 250px;  /* Minimum width for responsiveness */  
+}  
+
+/* Styling for section headers */  
+.footer_area p {  
+    font-size: 1.5em;  /* Larger font size for headers */  
+    margin-bottom: 15px;  /* Space below headers */  
+}  
+
+/* Table styling */  
+.wp-block-table {  
+    width: 100%;  /* Full width for tables */  
+    border-collapse: collapse;  /* Collapse borders */  
+}  
+
+table {  
+    margin: 10px 0;  /* Margin for tables */  
+}  
+
+td {  
+    padding: 8px;  /* Cell padding */  
+    border: 1px solid transparent;  /* Optional, can be styled */  
+}  
+
+/* Link styling */  
+a {  
+    color: white;  /* Link color */  
+    text-decoration: underline;  /* Underline links */  
+}  
+
+a:hover {  
+    color: #f39c12;  /* Change color on hover */  
+}  
+
+/* Map iframe styling */  
+footer iframe {  
+    width: 100%;  /* Responsive iframe width */  
+    height: 300px;  /* Fixed height for iframe */  
+    border: none;  /* Remove border */  
+    margin-top: 20px;  /* Space above iframe */  
+}
+/* Table styling */  
+.wp-block-table {  
+    width: 100%;  /* Full width for tables */  
+    border-collapse: collapse;  /* Collapse borders to create a single border */  
+}  
+
+table {  
+    margin: 10px 0;  /* Margin for tables */  
+}  
+
+/* Table cell styling to include borders */  
+ footer td {  
+    padding: 8px;  /* Cell padding */  
+    border: 1px solid white;  /* White border for the table cells */  
+}  
+
+/* Optional: Add border to table header (if it exists) */  
+footer th {  
+    padding: 8px;  /* Header cell padding */  
+    border: 1px solid white;  /* White border for header cells */  
+    background-color: #444;  /* Darker background for header */  
+}  
+
+/* Additional styling for responsiveness */  
+@media (max-width: 768px) {  
+    .footer_area {  
+        flex-direction: column;  /* Stack on smaller screens */  
+    }  
+    
+    .footer_area_one, .footer_area_two, .footer_area_three {  
+        min-width: 100%;  /* Full width on mobile */  
+    }  
+}
+.fa-solid{
+	margin: 3px;
+}
+.card-section{
+	margin-bottom: 20px;
+}
+/* **************back-image------section****** */
+  
+  
+.header {  
+    background-image: url('https://ibm.uet.edu.pk/wp-content/uploads/2024/11/cropped-bk_img1.jpg');
+    background-size: cover;  
+    background-position: center;  
+    height: 300px; /* Adjust height as needed */  
+    display: flex;  
+    flex-direction: column;  
+    justify-content: center;  
+    align-items: flex-start;  
+    color: white;  
+    padding: 20px;  
+    background-repeat: no-repeat;
+} 
+
+
+.header h1 {  
+    font-size: 36px;  
+    margin: 0;  
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);  
+}  
+
+
+
+
+
