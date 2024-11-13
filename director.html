@@ -2,615 +2,312 @@
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" href="style.css">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>C-IBM</title>
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMw4b0HGqA9Xf1U+mrqiidI+ZiRaAXyB9/cF5T" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <!-- Animate.css -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/superfish/1.7.9/css/superfish.css" />
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sidebar Example</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    .content-area{
-      display: flex;
-      justify-content:center;
-      flex-wrap: wrap;
-      font-weight: 100;
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C-IBM</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMw4b0HGqA9Xf1U+mrqiidI+ZiRaAXyB9/cF5T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/superfish/1.7.9/css/superfish.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidebar Example</title>
+    <script src="footer.js"></script>
+    <script src="header.js"></script>
+    <script src="navogation.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .content-area {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            font-weight: 100;
 
 
-    }
-    .x_MsoNormal {
-    margin: 15px 0px;
-}
+        }
 
-.content-area h4 {
-    margin: 30px 0px;
-    font-size: larger;
-    font-weight: bolder;
-}
+        .x_MsoNormal {
+            margin: 15px 0px;
+        }
 
-/* Media query for mobile responsiveness */
-@media (max-width: 768px) {
-    .x_MsoNormal {
-        margin: 7.5px 0px; /* Half of the original margin */
-    }
-    
-    .content-area h4 {
-        margin: 15px 0px; /* Half of the original margin */
-    }
-}
-
-    .theiaStickySidebar{
-      width: 70%;
-      padding:15PX;;
-    }
-    .widget-title {
-      font-size: 20px;
-      /* Font size for widget title */
-      font-weight: bold;
-      /* Make the title bold */
-      margin-bottom: 10px;
-      /* Space below the title */
-      margin-top: 50px;
-      /* Space below the title */
-      position: relative;
-      text-transform: uppercase;
-      /* Uppercase for titles */
-    }
-
-    /* Blue Underline Decoration for Titles */
-    .widget-title:after {
-      content: '';
-      display: block;
-      width: 10px;
-      /* Width of blue underline */
-      height: 2px;
-      /* Height of the underline */
-      background-color: #007bff;
-      /* Blue color */
-      position: absolute;
-      bottom: -5px;
-      /* Positioning below the title */
-      left: 0;
-      /* Align to the left */
-    }
-
-    /* Gray Underline Decoration with a Gap */
-    .widget-title:before {
-      content: '';
-      display: block;
-      width: 10px;
-      /* Width of gray underline */
-      height: 2px;
-      /* Height of the underline */
-      background-color: #353232;
-      /* Gray color */
-      position: absolute;
-      bottom: -5px;
-      /* Positioning below the title */
-      left: 12px;
-      /* Position gray underline to the right of blue */
-    }
-
-
-    .search-form {
-      display: flex;
-      /* Flex layout for the search form */
-      align-items: center;
-      /* Center align items */
-      margin-bottom: 20px;
-      /* Space below the search form */
-    }
-
-    .search-field {
-      flex: 1;
-      /* Take remaining space */
-      padding: 10px;
-      /* Padding inside the search box */
-      border: 1px solid #ddd;
-      /* Border for the input */
-      height: 50px;
-      border-right: none;
-      /* Remove the right border */
-    }
-
-    .search-submit {
-      background-color: #4d8aca;
-      /* Button color */
-      color: white;
-      /* Text color */
-      border: 1px solid #007bff;
-      /* Match border color */
-      height: 50px;
-      padding: 10px;
-      /* Padding inside the button */
-      cursor: pointer;
-      /* Change cursor on hover */
-      transition: background-color 0.3s;
-      /* Smooth transition for hover */
-    }
-
-    /* Button Hover Effect */
-    .search-submit:hover {
-      background-color: #0056b3;
-      /* Darker shade on hover */
-    }
-
-    /* Navigation Styles */
-    #menu-side-menu {
-      list-style: none;
-      /* Remove default list style */
-      padding-left: 10px;
-      /* Remove padding */
-    }
-
-    #menu-side-menu li {
-      padding: 15px;
-      padding-left: 0px;
-      ;
-      border-bottom: 1px solid #bfbcbc;
-      width:100PX;
-    }
-
-    #menu-side-menu a {
-      text-decoration: none;
-      /* Remove underline from links */
-      color: #333;
-      /* Link color */
-      transition: color 0.3s;
-      /* Smooth transition for hover */
-    }
-
-    /* Link Hover Effect */
-    #menu-side-menu a:hover {
-      color: #007bff;
-      /* Color change on hover */
-    }
-
-    /* ************************background pic***************************** */
-    body {  
-            font-family: Arial, sans-serif;  
-            margin: 0;  
-            padding: 0;  
-        }  
-   /* *************************Director Message********************** */
-   .director-message {  
-      
-           padding: 20px; /* Padding inside the div */  
-        
-  
-        }  
-
-        .director-message h2 {  
-            color: #007bff; /* Blue color for the title */  
-            margin: 30px 0px; /* No margin on the top */  
+        .content-area h4 {
+            margin: 30px 0px;
             font-size: larger;
-        }  
-     
-     
+            font-weight: bolder;
+        }
 
-        .header h1 {  
-            font-size: 36px;  
-            margin: 0;  
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);  
-        }  
+        /* Media query for mobile responsiveness */
+        @media (max-width: 768px) {
+            .x_MsoNormal {
+                margin: 7.5px 0px;
+                /* Half of the original margin */
+            }
 
-        .breadcrumb {  
-            font-size: 14px;  
-            margin-top: 10px;  
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);  
-        }  
+            .content-area h4 {
+                margin: 15px 0px;
+                /* Half of the original margin */
+            }
+        }
 
-        .breadcrumb a {  
-            color: white;  
-            text-decoration: none;  
-        }  
+        .theiaStickySidebar {
+            width: 70%;
+            padding: 15PX;
+            ;
+        }
 
-        .breadcrumb a:hover {  
-            text-decoration: underline;  
-        }  
-    </style> 
-  </style>
+        .widget-title {
+            font-size: 20px;
+            /* Font size for widget title */
+            font-weight: bold;
+            /* Make the title bold */
+            margin-bottom: 10px;
+            /* Space below the title */
+            margin-top: 50px;
+            /* Space below the title */
+            position: relative;
+            text-transform: uppercase;
+            /* Uppercase for titles */
+        }
+
+        /* Blue Underline Decoration for Titles */
+        .widget-title:after {
+            content: '';
+            display: block;
+            width: 10px;
+            /* Width of blue underline */
+            height: 2px;
+            /* Height of the underline */
+            background-color: #007bff;
+            /* Blue color */
+            position: absolute;
+            bottom: -5px;
+            /* Positioning below the title */
+            left: 0;
+            /* Align to the left */
+        }
+
+        /* Gray Underline Decoration with a Gap */
+        .widget-title:before {
+            content: '';
+            display: block;
+            width: 10px;
+            /* Width of gray underline */
+            height: 2px;
+            /* Height of the underline */
+            background-color: #353232;
+            /* Gray color */
+            position: absolute;
+            bottom: -5px;
+            /* Positioning below the title */
+            left: 12px;
+            /* Position gray underline to the right of blue */
+        }
+
+
+        .search-form {
+            display: flex;
+            /* Flex layout for the search form */
+            align-items: center;
+            /* Center align items */
+            margin-bottom: 20px;
+            /* Space below the search form */
+        }
+
+        .search-field {
+            flex: 1;
+            /* Take remaining space */
+            padding: 10px;
+            /* Padding inside the search box */
+            border: 1px solid #ddd;
+            /* Border for the input */
+            height: 50px;
+            border-right: none;
+            /* Remove the right border */
+        }
+
+        .search-submit {
+            background-color: #4d8aca;
+            /* Button color */
+            color: white;
+            /* Text color */
+            border: 1px solid #007bff;
+            /* Match border color */
+            height: 50px;
+            padding: 10px;
+            /* Padding inside the button */
+            cursor: pointer;
+            /* Change cursor on hover */
+            transition: background-color 0.3s;
+            /* Smooth transition for hover */
+        }
+
+        /* Button Hover Effect */
+        .search-submit:hover {
+            background-color: #0056b3;
+            /* Darker shade on hover */
+        }
+
+        /* Navigation Styles */
+        #menu-side-menu {
+            list-style: none;
+            /* Remove default list style */
+            padding-left: 10px;
+            /* Remove padding */
+        }
+
+        #menu-side-menu li {
+            padding: 15px;
+            padding-left: 0px;
+            ;
+            border-bottom: 1px solid #bfbcbc;
+            width: 100PX;
+        }
+
+        #menu-side-menu a {
+            text-decoration: none;
+            /* Remove underline from links */
+            color: #333;
+            /* Link color */
+            transition: color 0.3s;
+            /* Smooth transition for hover */
+        }
+
+        /* Link Hover Effect */
+        #menu-side-menu a:hover {
+            color: #007bff;
+            /* Color change on hover */
+        }
+
+        /* ************************background pic***************************** */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* *************************Director Message********************** */
+        .director-message {
+
+            padding: 20px;
+            /* Padding inside the div */
+
+
+        }
+
+        .director-message h2 {
+            color: #007bff;
+            /* Blue color for the title */
+            margin: 30px 0px;
+            /* No margin on the top */
+            font-size: larger;
+        }
+
+
+
+        .header h1 {
+            font-size: 36px;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .breadcrumb {
+            font-size: 14px;
+            margin-top: 10px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        }
+
+        .breadcrumb a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    </style>
 </head>
 
 <body
     class="home page-template page-template-template-home page-template-template-home-php page page-id-5 wp-custom-logo wp-embed-responsive sp-easy-accordion-enabled unselectable"
     style="cursor: default;">
     <div id="page" class="site">
-
-        <header id="masthead" class="site-header" role="banner">
-            <!-- Site Logo -->
-            <div class="ak-container">
-                <div class="social_htext_wrap">
-                    <span class="text_wrap">Nation Need Professionals with Knowledge, Skill, Innovation &amp;
-                        Commitment
-                    </span>
-                    <span class="fa_wrap">
-                        <i class="fa-brands fa-facebook"></i>
-                    </span>
+        <header-element></header-element>
+        <navigation-element></navigation-element>
+        <section>
+            <div class="header">
+                <h1> Director's Message</h1>
+                <div class="breadcrumb">
+                    <a href="#">Home</a> &gt; <span>Director`s Message</span>
                 </div>
             </div>
-            <div class="logo_info_wrap">
-                <div class="header-logo-container">
-                    <a href="https://ibm.uet.edu.pk/" class="custom-logo-link"><img width="294" height="113"
-                            src="./images/cropped-IBM_UET.jpg" class="custom-logo" alt="IB&M LHR" decoding="async"
-                            srcset="https://ibm.uet.edu.pk/wp-content/uploads/2017/02/cropped-IBM_UET.jpg 294w, https://ibm.uet.edu.pk/wp-content/uploads/2017/02/cropped-IBM_UET-160x61.jpg 160w"
-                            sizes="(max-width: 294px) 100vw, 200px"></a>
-                </div>
-                <div class="header_info_wrap">
-                    <div class="i-phone">
-                        <img src="/images/phone.png" alt="Icon" width="29px">
+        </section>
+        <div id="primary" class="content-area right"
+            style="position: relative; overflow: visible; box-sizing: border-box; min-height: 1px;">
+            <!-- #main -->
+            <div class="theiaStickySidebar" style="padding-top: 0px; padding-bottom: 1px; position: static;">
+                <main id="main" class="site-main" role="main">
+                    <div class="director-message">
+                        <h2>Director’s Message</h2>
+                        <p>IB&M is the leading institute where business students transform into inspiring industrial
+                            professionals and potential business leaders with vision, innovative creative solutions and
+                            entrepreneurial spirits to excel in today’s dynamic business environment. IB&M’s learned
+                            energetic and skilled faculty nurture the research and business skills of the students. I
+                            encourage the potential business graduates to contact us and to join hands with us at IB&M
+                            for having superlative learning experience and vibrant social life. Unveil and rejuvenate
+                            your entrepreneurial aptitude under the vast umbrella of UET’s esteemed alumni, Business
+                            Incubation Center and Career diverse options.</p>
                     </div>
-                    <div class="title_phone">
-                        <span class="pnone_title">Call Support</span>
-                        <span class="phone">+92-42-9925-0403</span>
-                    </div>
-                </div>
-                <div class="header_info_wrap">
-                    <div class="i-location">
-                        <img src="/images/location.png" alt="Icon" width="29px">
-                    </div>
-                    <div class="title_location_wrap">
-                        <span class="title_location">Location</span>
-                        <span class="location">IB&amp;M UET Lahore</span>
-                    </div>
-                </div>
-            </div>
-    </div>
+                    <footer class="entry-footer">
+                    </footer><!-- .entry-footer -->
+                    </article><!-- #post-## -->
 
-    <nav id="site-navigation" class="main-navigation center top" role="navigation">
-        <div class="aki-container">
-            <div class="menu-bar">
-                <i class="fa-solid fa-bars  fa-bars fa-2x iconi"></i>
+                </main>
             </div>
-            <div class="menu-menu-1-container mmenu-wrapper">
-                <ul id="primary-menu" class="menu nav-menu sf-js-enabled sf-arrows" aria-expanded="false">
-                    <li id="menu-item-2707" class="menu-item menu-item-2707">
-                        <a href="index.html" aria-current="page">Home</a>
-                    </li>
-                    <li id="menu-item-3086"
-                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3086">
-                        <a href="#">About Us<i class="fa-solid fa-caret-down"></i></a>
-                        <ul class="sub-menu">
-                            <li id="menu-item-2714"
-                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2714">
-                                <a href="director.html">Director’s Message</a>
-                            </li>
-                            <li id="menu-item-2710"
-                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2710">
-                                <a href="vision.html">Vision and Mission</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li id="menu-item-2721"
-                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2721"
-                        aria-haspopup="true"><a href="#">ACADEMIC <i class="fa-solid fa-caret-down"></i></a>
-                        <ul class="sub-menu">
-                            <li id="menu-item-3089"
-                                class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-3089"
-                                aria-haspopup="true"><a href="./html/program.html">Program <i
-                                        class="fa-solid fa-caret-down"></i></a>
-                                <ul class="sub-menu">
-                                    <li id="menu-item-2722"
-                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2722"
-                                        aria-haspopup="true"><a href="#">BACHELOR</a>
-                                        <ul class="sub-menu" style="display: none;">
-                                            <li id="menu-item-2723"
-                                                class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2723">
-                                                <a href="./html/bba.html">BBA</a>
-                                            </li>
-                                            <li id="menu-item-2724"
-                                                class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2724">
-                                                <a href="./html/bbit.html">BBIT</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li id="menu-item-2725"
-                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2725"
-                                        aria-haspopup="true"><a href="#" class="sf-with-ul">MBA</a>
-                                        <ul class="sub-menu" style="display: none;">
-                                            <li id="menu-item-2727"
-                                                class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2727">
-                                                <a href="./html/mba30.html">MBA (30 Credit Hours)</a>
-                                            </li>
-                                            <li id="menu-item-2728"
-                                                class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2728">
-                                                <a href="./html/mba60.html">MBA (60 Credit Hours)</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li id="menu-item-2726"
-                                        class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2726">
-                                        <a href="./html/emba.html">Executive MBA</a>
-                                    </li>
-                                    <li id="menu-item-3517"
-                                        class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3517">
-                                        <a href="./html/ms-management.html">MS Management</a>
-                                    </li>
-                                    <li id="menu-item-2732"
-                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2732">
-                                        <a href="./html/ph-d-business-management.html">Ph.D</a>
-                                    </li>
-                                    <li id="menu-item-3215"
-                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3215">
-                                        <a href="./documents/Program-Commencement-Dates.pdf">Program
-                                            Commencement Date</a>
-                                    </li>
-                                    <li id="menu-item-3210"
-                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3210">
-                                        <a href="./documents/Program-NOC.pdf">Program NOC</a>
-                                    </li>
-                                    <li id="menu-item-3211"
-                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3211">
-                                        <a href="./documents/Publications.pdf">Research Publications</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li id="menu-item-2733"
-                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2733"
-                                aria-haspopup="true"><a href="#">STAFF <i class="fa-solid fa-caret-down"></i></a>
-                                <ul class="sub-menu" style="display: none;">
-                                    <li id="menu-item-3246"
-                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3246">
-                                        <a href="./html/faculty-list.html">Academic Staff</a>
-                                    </li>
-                                    <li id="menu-item-2737"
-                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2737">
-                                        <a href="./html/staff.html">NON-ACADEMIC STAFF</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li id="menu-item-2738"
-                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2738"
-                        aria-haspopup="true"><a href="#">ADMISSION<i class="fa-solid fa-caret-down"></i></a>
-                        <ul class="sub-menu">
-                            <li id="menu-item-2761"
-                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2761">
-                                <a href="https:/admission.uet.edu.pk/Modules/EntryTest/Default.aspx">Apply
-                                    Online</a>
-                            </li>
-                            <li id="menu-item-3647"
-                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3647">
-                                <a href="https:/ibm.uet.edu.pk/wp-content/uploads/2024/07/Instructions.pdf">TEST AND
-                                    INTERVIEW GUIDE</a>
-                            </li>
-                            <li id="menu-item-2740"
-                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2740">
-                                <a href="fee.html">Fee Structure</a>
-                            </li>
-                            <li id="menu-item-2741"
-                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2741">
-                                <a href="./html/index.html">CAMPUS FACILITIES</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li id="menu-item-2744"
-                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2744"
-                        aria-haspopup="true"><a href="#">STUDENT<i class="fa-solid fa-caret-down"></i></a>
-                        <ul class="sub-menu">
-                            <li id="menu-item-2747"
-                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2747">
-                                <a
-                                    href="https:/forms.office.com/Pages/ResponsePage.aspx?id=bAnfdXKL5Eibkcv3nYfuOoktSzs_uYVLmqHqpso3ZyBUQjJUWDFEVjYzTFZWMTZHMEVHNlFSVFgwUS4u">ALUMNi</a>
-                            </li>
-                            <li id="menu-item-2745"
-                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2745">
-                                <a href="https://admission.uet.edu.pk/Modaules/EntryTest/">FUTURE STUDENT</a>
-                            </li>
-                            <li id="menu-item-2746"
-                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2746">
-                                <a href="https:/lms.uet.edu.pk/">CURRENT STUDENT</a>
-                            </li>
-                            <li id="menu-item-2752"
-                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2752">
-                                <a href="https:/cco.uet.edu.pk/">CAREER</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li id="menu-item-2751"
-                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2751"
-                        aria-haspopup="true"><a href="#">DOWNLOADS<i class="fa-solid fa-caret-down"></i></a>
-                        <ul class="sub-menu">
-                            <li id="menu-item-2748"
-                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2748">
-                                <a href="table.html">Time Table</a>
-                            </li>
-                            <li id="menu-item-3428"
-                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3428">
-                                <a
-                                    href="https:/ibm.uet.edu.pk/wp-content/uploads/2023/08/Percribed-Performa-for-Fee-Concession-1.pdf">Scholarship
-                                    Application Form</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li id="menu-item-2713"
-                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2713"><a
-                        href="contact.html">Contact Us</a></li>
-
-                    <li id="menu-item-2753"
-                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2753"><a
-                            href="notice.html">Notice Board</a></li>
-                    <li id="menu-item-3272"
-                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3272">
-                        <a href="#">Research <i class="fa-solid fa-caret-down"></i></a>
-                        <ul class="sub-menu">
-                            <li id="menu-item-3271"
-                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3271">
-                                <a href="./html/research-publication.html">Research Publication</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+            <div id="secondary">
+                <aside id="secondary" class="widget-area" role="complementary">
+                    <section id="search-2" class="widget widget_search">
+                        <h2 class="widget-title">Search</h2>
+                        <form role="search" method="get" class="search-form" action="https://ibm.uet.edu.pk/">
+                            <label>
+                                <input type="search" class="search-field" placeholder="Search …" value="" name="s">
+                            </label>
+                            <input type="submit" class="search-submit" value="Search">
+                        </form>
+                        <div class="divider"></div>
+                    </section>
+                    <section id="nav_menu-3" class="widget widget_nav_menu">
+                        <h2 class="widget-title">Navigation</h2>
+                        <div class="menu-side-menu-container">
+                            <ul id="menu-side-menu" class="menu">
+                                <li id="menu-item-1209" class="menu-item">
+                                    <a href="https://ibm.uet.edu.pk/">Home</a>
+                                </li>
+                                <li id="menu-item-2450" class="menu-item">
+                                    <a href="./html/faculty.html">Staff Profile</a>
+                                </li>
+                                <li id="menu-item-1211" class="menu-item">
+                                    <a href="./html/contact-us.html">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="divider"></div>
+                    </section>
+                </aside><!-- #secondary -->
             </div>
         </div>
-    </nav><!-- #site-navigation -->
-   
-
-    <section>
-        <div class="header">  
-            <h1> Director's Message</h1>  
-            <div class="breadcrumb">  
-                <a href="#">Home</a> &gt; <span>Director`s Message</span>  
-            </div>  
-        </div> 
+        <footer-element></footer-element>
 
 
-    </section>
-
-
-  <div id="primary" class="content-area right"
-    style="position: relative; overflow: visible; box-sizing: border-box; min-height: 1px;">
-    <!-- #main -->
-    <div class="theiaStickySidebar" style="padding-top: 0px; padding-bottom: 1px; position: static;">
-        <main id="main" class="site-main" role="main">
-    <div class="director-message">  
-        <h2>Director’s Message</h2>  
-        <p>IB&M is the leading institute where business students transform into inspiring industrial professionals and potential business leaders with vision, innovative creative solutions and entrepreneurial spirits to excel in today’s dynamic business environment. IB&M’s learned energetic and skilled faculty nurture the research and business skills of the students. I encourage the potential business graduates to contact us and to join hands with us at IB&M for having superlative learning experience and vibrant social life. Unveil and rejuvenate your entrepreneurial aptitude under the vast umbrella of UET’s esteemed alumni, Business Incubation Center and Career diverse options.</p>  
-    </div>  
-
-       
-
-        <footer class="entry-footer">
-        </footer><!-- .entry-footer -->
-        </article><!-- #post-## -->
-
-      </main>
-    </div>
-    <div id="secondary">
-      <aside id="secondary" class="widget-area" role="complementary">
-        <section id="search-2" class="widget widget_search">
-          <h2 class="widget-title">Search</h2>
-          <form role="search" method="get" class="search-form" action="https://ibm.uet.edu.pk/">
-            <label>
-              <input type="search" class="search-field" placeholder="Search …" value="" name="s">
-            </label>
-            <input type="submit" class="search-submit" value="Search">
-          </form>
-          <div class="divider"></div>
-        </section>
-        <section id="nav_menu-3" class="widget widget_nav_menu">
-          <h2 class="widget-title">Navigation</h2>
-          <div class="menu-side-menu-container">
-            <ul id="menu-side-menu" class="menu">
-              <li id="menu-item-1209" class="menu-item">
-                <a href="https://ibm.uet.edu.pk/">Home</a>
-              </li>
-              <li id="menu-item-2450" class="menu-item">
-                <a href="./html/faculty.html">Staff Profile</a>
-              </li>
-              <li id="menu-item-1211" class="menu-item">
-                <a href="./html/contact-us.html">Contact Us</a>
-              </li>
-            </ul>
-          </div>
-          <div class="divider"></div>
-        </section>
-      </aside><!-- #secondary -->
-    </div>
-    </div>
-    <footer id="colophon" class="site-footer" role="contentinfo" style="color: white;">
-      <div class="ak-container">
-          <div class="footer_area clearfix">
-              <div class="footer_area_one">
-                  <section id="block-3" class="widget widget_block widget_text">
-                      <p
-                          class="has-luminous-vivid-amber-color has-text-color has-link-color has-medium-font-size wp-elements-9a7366fd623ddc23401ffc4996e1709d">
-                          <strong><mark style="background-color:rgba(0, 0, 0, 0);color: white; padding: 8px;">Contact
-                                  Us</mark></strong>
-                      </p>
-                  </section>
-                  <section id="block-11" class="widget widget_block" style="color: white;">
-                      <figure class="wp-block-table">
-                          <table>
-                              <tbody style="color: white;">
-                                  <tr>
-                                      <td><strong style="color: white;">Office&#160; &#160;#&#160;
-                                          </strong>+92-42-9902-9494 </td>
-                                  </tr>
-                                  <tr>
-                                      <td><strong>Mobile #&#160; </strong>+92 304 4937060</td>
-                                  </tr>
-                                  <tr>
-                                      <td>Institute of Business &amp; Management, University of Engineering &amp;
-                                          Technology,<br>GT Road, Lahore, Pakistan.</td>
-                                  </tr>
-                              </tbody>
-                          </table>
-                      </figure>
-                  </section>
-              </div>
-              <div class="footer_area_two" style="color:white">
-                  <section id="block-16" class="widget widget_block widget_text">
-                      <p
-                          class="has-luminous-vivid-amber-color has-text-color has-link-color has-medium-font-size wp-elements-f252e95ddc58252a8e4e1f5905eb0d94">
-                          <strong><mark style="background-color:rgba(0, 0, 0, 0);color: white;padding: 8px;;"
-                                  class="has-inline-color has-cyan-bluish-gray-color">Downloads</mark></strong>
-                      </p>
-                  </section>
-                  <section id="block-18" class="widget widget_block" style="color: white;">
-                      <figure class="wp-block-table">
-                          <table>
-                              <tbody>
-                                  <tr>
-                                      <td><a href="./html/time-table.html" data-type="page" data-id="1572"><mark
-                                                  style="background-color:rgba(0, 0, 0, 0);color: white"
-                                                  class="has-inline-color has-white-color"><span
-                                                      style="text-decoration: underline;">Time
-                                                      Tables</span></mark></a></td>
-                                  </tr>
-                                  <tr>
-                                      <td><a href="./documents/Percribed-Performa-for-Fee-Concession-1.pdf"><mark
-                                                  style="background-color:rgba(0, 0, 0, 0);color: white""
-                                                  class=" has-inline-color has-white-color"><span
-                                                      style="text-decoration: underline;">Scholarship Application
-                                                      Form</span></mark></a></td>
-                                  </tr>
-                                  <tr>
-                                      <td><a href="./html/fee-structure.html" data-type="link"
-                                              data-id="https://ibm.uet.edu.pk/fee-structure/"><mark
-                                                  style="background-color:rgba(0, 0, 0, 0)"
-                                                  class="has-inline-color has-white-color"><span
-                                                      style="text-decoration: underline;;color: white"">Fee
-                                                      Structure</span></mark></a></td>
-                                  </tr>
-                              </tbody>
-                          </table>
-                      </figure>
-                  </section>
-              </div>
-              <div class=" footer_area_three">
-                                                      <section id="block-12" class="widget widget_block widget_text">
-                                                          <p></p>
-                                                      </section>
-                                                      <section id="block-15" class="widget widget_block"><iframe
-                                                              loading="lazy" style="border: 0;"
-                                                              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13596.121076627815!2d74.353792!3d31.5782178!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x33643ef682136caa!2sIBM-UET!5e0!3m2!1sen!2s!4v1560422525655!5m2!1sen!2s"
-                                                              width="600" height="200" frameborder="0"
-                                                              allowfullscreen="allowfullscreen"></iframe>
-                                                      </section>
-              </div>
-          </div>
-
-          <div class="site-info">
-
-          </div><!-- .site-info -->
-
-      </div>
-  </footer><!-- #colophon -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="script.js"></script>
 </body>
 
 </html>
