@@ -1,14 +1,13 @@
 class FooterElement extends HTMLElement {
     constructor() {
         super();
-        
+
         // Attach a shadow root to the element
         const shadow = this.attachShadow({ mode: 'open' });
 
         // Define the HTML structure
         shadow.innerHTML = `
             <style>
-                /* Your footer CSS styles here */
                 #colophon {  
                     background-color: #2c2c2c;
                     color: white;
@@ -34,12 +33,13 @@ class FooterElement extends HTMLElement {
                     width: 100%;
                     border-collapse: collapse;
                 }
-                table {  
-                    margin: 10px 0;
-                }
-                td {  
+                footer td, footer th {  
                     padding: 8px;
                     border: 1px solid white;
+                    color: #ffffff;
+                }
+                footer th {  
+                    background-color: #444;
                 }
                 footer iframe {  
                     width: 100%;

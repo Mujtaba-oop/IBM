@@ -477,7 +477,7 @@ table {
     margin: 10px 0;  /* Margin for tables */  
 }  
 
-td {  
+footer td {  
     padding: 8px;  /* Cell padding */  
     border: 1px solid transparent;  /* Optional, can be styled */  
 }  
@@ -508,19 +508,7 @@ footer iframe {
 table {  
     margin: 10px 0;  /* Margin for tables */  
 }  
-
-/* Table cell styling to include borders */  
- footer td {  
-    padding: 8px;  /* Cell padding */  
-    border: 1px solid white;  /* White border for the table cells */  
-}  
-
-/* Optional: Add border to table header (if it exists) */  
-footer th {  
-    padding: 8px;  /* Header cell padding */  
-    border: 1px solid white;  /* White border for header cells */  
-    background-color: #444;  /* Darker background for header */  
-}  
+  
 
 /* Additional styling for responsiveness */  
 @media (max-width: 768px) {  

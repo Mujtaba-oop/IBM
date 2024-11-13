@@ -17,39 +17,12 @@ class NavigationElement extends HTMLElement {
                     <li id="menu-item-2714"><a href="director.html">Director’s Message</a></li>
                     <li id="menu-item-2710"><a href="vision.html">Vision and Mission</a></li>
                   </ul>
-                </li>
-                <li id="menu-item-2721" class="menu-item menu-item-has-children">
-                  <a href="#">ACADEMIC <i class="fa-solid fa-caret-down"></i></a>
-                  <ul class="sub-menu">
-                    <li id="menu-item-3089" class="menu-item menu-item-has-children">
-                      <a href="./html/program.html">Program <i class="fa-solid fa-caret-down"></i></a>
-                      <ul class="sub-menu">
-                        <li><a href="./html/bba.html">BBA</a></li>
-                        <li><a href="./html/bbit.html">BBIT</a></li>
-                        <li><a href="./html/mba30.html">MBA (30 Credit Hours)</a></li>
-                        <li><a href="./html/mba60.html">MBA (60 Credit Hours)</a></li>
-                        <li><a href="./html/emba.html">Executive MBA</a></li>
-                        <li><a href="./html/ms-management.html">MS Management</a></li>
-                        <li><a href="./html/ph-d-business-management.html">Ph.D</a></li>
-                        <li><a href="./documents/Program-Commencement-Dates.pdf">Program Commencement Date</a></li>
-                        <li><a href="./documents/Program-NOC.pdf">Program NOC</a></li>
-                        <li><a href="./documents/Publications.pdf">Research Publications</a></li>
-                      </ul>
-                    </li>
-                    <li id="menu-item-2733" class="menu-item menu-item-has-children">
-                      <a href="#">STAFF <i class="fa-solid fa-caret-down"></i></a>
-                      <ul class="sub-menu">
-                        <li><a href="./html/faculty-list.html">Academic Staff</a></li>
-                        <li><a href="./html/staff.html">NON-ACADEMIC STAFF</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
+                </li>      
                 <li id="menu-item-2738" class="menu-item menu-item-has-children">
                   <a href="#">ADMISSION<i class="fa-solid fa-caret-down"></i></a>
                   <ul class="sub-menu">
-                    <li><a href="https:/admission.uet.edu.pk/Modules/EntryTest/Default.aspx">Apply Online</a></li>
-                    <li><a href="https:/ibm.uet.edu.pk/wp-content/uploads/2024/07/Instructions.pdf">TEST AND INTERVIEW GUIDE</a></li>
+                    <li><a href="https://admission.uet.edu.pk/Modules/EntryTest/Default.aspx">Apply Online</a></li>
+                    <li><a href="https://ibm.uet.edu.pk/wp-content/uploads/2024/07/Instructions.pdf">TEST AND INTERVIEW GUIDE</a></li>
                     <li><a href="fee.html">Fee Structure</a></li>
                     <li><a href="./html/index.html">CAMPUS FACILITIES</a></li>
                   </ul>
